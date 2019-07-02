@@ -16,6 +16,8 @@ You can also train the models for any other object/s you wish to work with. All 
 
 I won't be providing a full walkthrough in this repo, as EdjeElectronics have already done so. If you want to train your model from zero to hero, you can check [their repo](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10).
 
+## Possible Errors
+
 **Make sure you copy the repo into "C:/tensorflow1". I've had path errors before doing so, you are free to try otherwise but if you get errors, this may be your solution.**
 
 **As mentioned in [EdjeElectronics' repo](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10), Tensorflow often update their repos and you may get error like "ImportError: cannot import blah blah". Then you should go on and check your protos file to see if you have any missing .py pairs of the .proto files.**
