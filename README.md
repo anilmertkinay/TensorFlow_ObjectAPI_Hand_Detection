@@ -27,7 +27,7 @@ _python export_inference_graph.py --input_type image_tensor --pipeline_config_pa
 
 This creates a _frozen_inference_graph.pb_ file in the \object_detection\inference_graph folder. The .pb file contains the object detection classifier.
 
-To run the Object Detection Classifier, run the command _ _idle_ _ using the environment you have presumably created and used so far. In the idle window (which basically a text editor that comes with python), open the _ _Object_detection_webcam.py_ _ script and run it.
+To run the Object Detection Classifier, run the command _idle_ using the environment you have presumably created and used so far. In the idle window (which basically a text editor that comes with python), open the _Object_detection_webcam.py_ script and run it.
 
 ## Possible Errors:
 
