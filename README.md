@@ -15,7 +15,20 @@ EgoHands Datasets was used in this project to train the model. (link to their we
 
 You can also train the models for any other object/s you wish to work with. All you have to do is create the tfrecords(generate_tfrecords.py) for the dataset you will be using, configure your .config and labelmap files according to your labels and the number of objects you will be working with. **Make sure you set the file paths right in the .config file of the model you will be using.**
 
-I won't be providing a full walkthrough in this repo, as EdjeElectronics have already done so. If you want to train your model from zero to hero, you can check [their repo](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10).
+I won't be providing a full walkthrough in this repo, as EdjeElectronics have already done so. I suggest you take a look  If you want to train your model from zero to hero, you can check [their repo](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10).
+
+## How to run:
+
+After the training is done, we need the frozen inference graphs to implement our trained model. If you have followed EdjeElectronics tutorial to this points TF should have created model.ckpt-XXXX inside the /training folder where XXXX should have the highest of the same file types. (You could also download this from an existing repo of a model) 
+
+Run this command in ./object_detection:
+
+_ _python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
+_ _ 
+
+This creates a _ _frozen_inference_graph.pb_ _ file in the \object_detection\inference_graph folder. The .pb file contains the object detection classifier.
+
+To run the Object Detection Classifier, run the command _ _idle_ _ using the environment you have presumably created and used so far. In the idle window (which basically a text editor that comes with python), open the _ _Object_detection_webcam.py_ _ script and run it.
 
 ## Possible Errors:
 
