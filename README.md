@@ -8,7 +8,7 @@ Training a TensorFlow Object Detection Classifier to Detect and Track Hands in R
 - Latest version of TensorFlow (TensorFlow-GPU if you have a GPU that can handle the job, check nVIDIA/CUDA's website to learn.)
 - Latest version of protobuf
 
-For the sake of speed, I have used ssdmobilenet, as I will be detecting hands in Real-Time. But feel free to try other pre-trained models as well.
+For the sake of speed, I have used ssdmobilenet, as I will be detecting hands in Real-Time. But feel free to try other pre-trained models as well. I have also tried faster_rcnn_inception_v2 but it proved to be slower than the mobilenet at RT Detection.
 
 EgoHands Datasets was used in this project to train the model. (link to their website below) I haven't tried Oxford's Hand Dataset yet, you might want to give it a try if you don't get the desired performance with EgoHands.
 
