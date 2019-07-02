@@ -12,7 +12,7 @@ For the sake of speed, I have used ssdmobilenet, as I will be detecting hands in
 
 EgoHands Datasets was used in this project to train the model. (link to their website below) I haven't tried Oxford's Hand Dataset yet, you might want to give it a try if you don't get the desired performance with EgoHands.
 
-You can also train the models for any other object/s you wish to work with. All you have to do is create the tfrecords for the dataset you will be using, configure your .config and labelmap files according to your labels and the number of objects you will be working with. **Make sure you set the file paths right in the .config file of the model you will be using.**
+You can also train the models for any other object/s you wish to work with. All you have to do is create the tfrecords(generate_tfrecords.py) for the dataset you will be using, configure your .config and labelmap files according to your labels and the number of objects you will be working with. **Make sure you set the file paths right in the .config file of the model you will be using.**
 
 I won't be providing a full walkthrough in this repo, as EdjeElectronics have already done so. If you want to train your model from zero to hero, you can check [their repo](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10).
 
