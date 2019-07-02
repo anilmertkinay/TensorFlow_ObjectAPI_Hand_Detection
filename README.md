@@ -23,10 +23,9 @@ After the training is done, we need the frozen inference graphs to implement our
 
 Run this command in ./object_detection:
 
-_ _python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
-_ _ 
+_python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph_
 
-This creates a _ _frozen_inference_graph.pb_ _ file in the \object_detection\inference_graph folder. The .pb file contains the object detection classifier.
+This creates a _frozen_inference_graph.pb_ file in the \object_detection\inference_graph folder. The .pb file contains the object detection classifier.
 
 To run the Object Detection Classifier, run the command _ _idle_ _ using the environment you have presumably created and used so far. In the idle window (which basically a text editor that comes with python), open the _ _Object_detection_webcam.py_ _ script and run it.
 
