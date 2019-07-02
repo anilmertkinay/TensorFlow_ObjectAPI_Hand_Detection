@@ -7,6 +7,7 @@ Training a TensorFlow Object Detection Classifier to Detect and Track Hands in R
 - Python 3.5
 - Latest version of TensorFlow (TensorFlow-GPU if you have a GPU that can handle the job, check nVIDIA/CUDA's website to learn.)
 - Latest version of protobuf
+- Tensorflow's model and example repo (downloadable at [here](https://github.com/tensorflow/models))
 
 For the sake of speed, I have used ssdmobilenet, as I will be detecting hands in Real-Time. But feel free to try other pre-trained models as well. I have also tried faster_rcnn_inception_v2 but it proved to be slower than the mobilenet at RT Detection.
 
