@@ -35,7 +35,7 @@ To run the Object Detection Classifier, run the command _idle_ using the environ
 
 **As mentioned in [EdjeElectronics' repo](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10), Tensorflow often update their repos and you may get error like "ImportError: cannot import blah blah". Then you should go on and check your protos file to see if you have any missing .py pairs of the .proto files.**
 
-## References:
+## Citations:
 
 - [Sentdex's Tutorial on Object Detection API](https://pythonprogramming.net/introduction-use-tensorflow-object-detection-api-tutorial/)
 - [Victor Dibia's hand detection](https://github.com/victordibia/handtracking)
